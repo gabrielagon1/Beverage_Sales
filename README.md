@@ -1,6 +1,8 @@
 # Beverage Sales
 Este conjunto de dados foi criado para simular padrões de vendas realistas na indústria de bebidas, destacando fatores importantes como preferências regionais, flutuações sazonais e segmentação de clientes. Ele apresenta transações Business-to-Business (B2B) e Business-to-Consumer (B2C), tornando-o adaptável para uma variedade de propósitos analíticos.
 
+> LiNK PARA O DASH: https://lookerstudio.google.com/reporting/e05798a9-f8d7-44b2-acab-ccf4bc13a9a2
+
 # Dados utilizados:
 
 - Order_ID Identificador exclusivo para cada pedido. Agrupa vários produtos no mesmo pedido.
