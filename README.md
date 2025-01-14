@@ -33,7 +33,7 @@ Este conjunto de dados foi criado para simular padrões de vendas realistas na i
 
 **Depois do primeiro contato, comecei a me fazer algumas perguntas:**
 
-** Quais foram as vendas por região?**
+**Quais foram as vendas por região?**
 > sales.groupby('Region')['Total_Price'].sum().sort_values(ascending=False)
 
 ![image](https://github.com/user-attachments/assets/eb0795a9-7678-464e-b419-e3520d8275e3)
@@ -42,6 +42,18 @@ Este conjunto de dados foi criado para simular padrões de vendas realistas na i
 > sales.groupby('Category')['Total_Price'].sum().sort_values(ascending=False)
 
 ![image](https://github.com/user-attachments/assets/bb7bacf5-7a6b-46b9-a10f-428ad1ce830a)
+
+# Qual foi o modelo de négocio mais vendido?**
+
+result = sales.groupby('Customer_Type').agg(
+    Total_Price=('Total_Price', 'sum'),     
+    Quantity=('Total_Price', 'size')).round()                                 
+
+# Ordenar pelo Total_Price de forma decrescente
+result = result.sort_values(by='Total_Price', ascending=False)
+
+![image](https://github.com/user-attachments/assets/38c9e296-0606-4b42-9684-e837fd95f902)
+
 
 
 
