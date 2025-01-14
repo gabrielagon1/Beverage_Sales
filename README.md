@@ -3,7 +3,7 @@ Este conjunto de dados foi criado para simular padrões de vendas realistas na i
 
 # Colunas 
 
-Order_ID Identificador exclusivo para cada pedido. Agrupa vários produtos no mesmo pedido.
+- Order_ID Identificador exclusivo para cada pedido. Agrupa vários produtos no mesmo pedido.
 - Customer_ID Identificador exclusivo para cada cliente, distinguindo compradores individuais.
 - Customer_Type Indica se o cliente é B2B (business-to-business) ou B2C (business-to-consumer).
 - Product O nome do produto adquirido, como "Coca-Cola" ou "Erdinger Weißbier".
